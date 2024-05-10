@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>Formulário</h2>
+    <form action="register.php" method="get">
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="age">idade:</label>
+            <input type="text" name="age">
+        </div>
+        <div>
+            <label for="job">Selecione uma profissâo: </label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="motorista">Motorista</option>
+                <option value="stripper">Stripper</option>
+            </select>
+        </div>
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">SIM</option>
+                <option value="não" selected>NÃO</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="option">Selecione os itens desejados:</label>
+            <select name="option" multiple>
+                <option value="pera">Pera</option>
+                <option value="maça">Maça</option>
+                <option value="banana">Banana</option>
+                <option value="melancia">Melancia</option>
+            </select>
+        </div>
+        
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
