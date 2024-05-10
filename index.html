@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulário</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/TesteForm/style.css">
 </head>
 <body>
     <h2>Formulário</h2>
@@ -42,8 +42,70 @@
                 <option value="melancia">Melancia</option>
             </select>
         </div>
+        <div>
+            <label for="comment">Comentário:</label>
+            <textarea name="comment"></textarea>
+        </div>
         
+        <div>
+            <fieldset>
+                <legend>Preencha suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
 
+        <div>
+            <label for="flavor">Sabor</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="cereja"></option>
+                <option value="morango"></option>
+                <option value="chocolate"></option>
+
+            </datalist>
+        </div>
+
+        <div>
+            <label for="password">senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <label for="car_model">Escolha o modelo de seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="BMW" name="car_model">
+                <label for="BMW">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="Ferrari" name="car_model">
+                <label for="Ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="Porsche" name="car_model">
+                <label for="Porsche">Porsche</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="optionals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo">
+                <label for="turbo">Motor Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="pneu">
+                <label for="pneu">Pneu foda</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hibrido">
+                <label for="hibrido">Carro híbrido</label>
+            </div>
+        </div>
+        <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
     </form>
 </body>
